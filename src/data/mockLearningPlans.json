@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "createdAt": "2025-04-23T15:00:00.000Z",
+      "title": "Web Development 1",
+      "steps": ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"],
+      "completed": [false, false, false, false, false]
+    },
+    {
+      "id": 2,
+      "createdAt": "2025-04-22T15:00:00.000Z",
+      "title": "Web Development 2",
+      "steps": ["Step 1", "Step 2", "Step 3"],
+      "completed": [true, true, false]
+    },
+    {
+      "id": 3,
+      "createdAt": "2025-04-13T15:00:00.000Z",
+      "title": "Web Development 3",
+      "steps": ["Step 1", "Step 2"],
+      "completed": [true, true]
+    }
+  ]
+  
