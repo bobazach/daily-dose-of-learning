@@ -1,0 +1,23 @@
+`Generate a 5-step plan to learn $(geminiInput). Provide very short, header-style steps.`
+- actionaly? too long though
+
+"1. **HTML & CSS Fundamentals**\n
+2. **JavaScript Basics**\n
+3. **Choose a Framework (React, Vue, Angular)**\n
+4. **Build Projects**\n
+5. **Deploy & Learn Version Control (Git)**\n"
+
+`I want to learn ${geminiInput}. 
+Give me a 5-step learning plan. 
+Return ONLY a JSON array of short, actionable step titles. 
+Example format: ["Learn HTML basics", "Practice CSS", "Start JavaScript fundamentals", "Build a small project", "Deploy it online"]
+Do not add any explanations or formatting. 
+Do not wrap the output in tripple backticks.
+Do not label is with 'json' or use Markdown formatting.
+Just output raw JSON, nothing else.`
+
+0: "Learn the basic rules"
+1: "Master the basic strokes"
+2: "Practice the kitchen line"
+3: "Play practice games"
+4: "Develop a strategy"
