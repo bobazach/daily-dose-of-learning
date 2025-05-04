@@ -5,7 +5,11 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
-const CreateLearningPlan = () => {
+type CreateLearningPlanProps = {
+  onGenerate: (title: string, steps: string[]) => void;
+};
+
+const CreateLearningPlan = ({ onGenerate }: CreateLearningPlanProps) => {
   const [geminiInput, setGeminiInput] = useState("");
   const [promptResponse, setPromptResponse] = useState<string[]>([]);
 
@@ -14,7 +18,6 @@ const CreateLearningPlan = () => {
   }, [promptResponse]);
 
   const generateResponse = async () => {
-    console.log({ geminiInput }); // Title
     console.log(Date.now());
     let prompt = `I want to learn ${geminiInput}. 
                   Give me a 5-step learning plan. 
@@ -33,6 +36,7 @@ const CreateLearningPlan = () => {
 
       try {
         const stepsArray = JSON.parse(text);
+        onGenerate(geminiInput, stepsArray);
         setPromptResponse(stepsArray);
         setGeminiInput("");
       } catch (parseError) {

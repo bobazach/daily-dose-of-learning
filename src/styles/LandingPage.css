@@ -1,0 +1,39 @@
+.landing-wrapper {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #2b72ff, #00bfff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+  }
+  
+  .text-box h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  
+  .typewriter {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  
+  .start-button {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 500px;
+    background-color: white;
+    color: #2b72ff;
+    margin: 1rem;
+  }
+  
+  .paper-plane {
+    fill:white;
+    width: 300px;
+    opacity: 0.8;
+    margin: 1rem;
+  }
+  

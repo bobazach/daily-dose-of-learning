@@ -1,16 +1,6 @@
+/* Keep these global styles */
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  background-color: rgb(244, 244, 244);
+  background-color: rgb(245, 245, 245);
 }
-
-#learning-plan-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-

@@ -1,0 +1,14 @@
+#header{
+    display: flex;
+    height: 50px;
+    background-color: bisque;
+}
+
+#learning-plan-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
