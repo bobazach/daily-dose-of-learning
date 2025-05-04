@@ -1,12 +1,20 @@
 import React from "react";
 import LearningPlan from "../components/LearningPlan";
+import CreateLearningPlan from "../components/CreateLearningPlan";
 
 const DashboardPage = () => {
   return (
-    <div>
-      <h1>Your Learning Plans</h1>
-      <LearningPlan />
-    </div>
+    <>
+      <div id="body">
+        <CreateLearningPlan></CreateLearningPlan>
+        <div>Your Learning Plans</div>
+        <div id="learning-plan-container">
+          <LearningPlan />
+          <LearningPlan />
+          <LearningPlan />
+        </div>
+      </div>
+    </>
   );
 };
 
